@@ -3,6 +3,7 @@
 Bem-vindo ao repositório do Desafio Lógica Super Trunfo! Este projeto foi desenvolvido como parte dos estudos de lógica de programação utilizando a linguagem C, com três níveis de complexidade. A ideia é evoluir gradualmente, aplicando conceitos aprendidos na prática. 😄
 
 📚 Níveis de Implementação
+
 🟢 1️⃣ Nível Novato
 Neste nível, o jogo compara um único atributo entre duas cartas.
 
@@ -35,6 +36,7 @@ O programa soma os valores de cada carta e compara;
 Resultado apresentado com clareza, com tratamento de empate.
 
 🛠️ Como Executar
+
 💻 Requisitos
 Ter o compilador GCC instalado;
 
@@ -58,6 +60,7 @@ Veja os valores de cada carta nos atributos escolhidos;
 Acompanhe o resultado detalhado, com explicações da pontuação.
 
 🧑‍🏫 Contribuição e Orientação
+
 Este projeto foi desenvolvido com muito carinho e dedicação como parte da minha evolução no curso.
 Gostaria muito de contar com o feedback do professor, tanto em relação à lógica quanto ao código, para que eu possa melhorar:
 
