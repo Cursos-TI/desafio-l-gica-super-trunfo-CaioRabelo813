@@ -135,7 +135,7 @@ gcc nivel-mestre.c -o mestre
 ---
 
 ## 🤝 Contribuição
-Este repositório foi criado como parte da disciplina de lógica de programação. Professor, sua orientação é muito bem-vinda! Sinta-se à vontade para sugerir melhorias, correções ou novas ideias que possam enriquecer ainda mais este aprendizado.
+Professor, sua orientação é muito bem-vinda! Sinta-se à vontade para sugerir melhorias, correções ou novas ideias que possam enriquecer ainda mais este aprendizado.
 
 Agradeço desde já por todo o conhecimento compartilhado até aqui! 🙏
 
