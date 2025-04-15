@@ -1,4 +1,5 @@
 🚀 Desafio Lógica Super Trunfo 🎴
+
 Bem-vindo ao repositório do Desafio Lógica Super Trunfo! Este projeto foi desenvolvido como parte dos estudos de lógica de programação utilizando a linguagem C, com três níveis de complexidade. A ideia é evoluir gradualmente, aplicando conceitos aprendidos na prática. 😄
 
 📚 Níveis de Implementação
