@@ -1,74 +1,69 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+🚀 Desafio Lógica Super Trunfo 🎴
+Bem-vindo ao repositório do Desafio Lógica Super Trunfo! Este projeto foi desenvolvido como parte dos estudos de lógica de programação utilizando a linguagem C, com três níveis de complexidade. A ideia é evoluir gradualmente, aplicando conceitos aprendidos na prática. 😄
 
-# Desafio Super Trunfo - Países - Comparação das Cartas
+📚 Níveis de Implementação
+🟢 1️⃣ Nível Novato
+Neste nível, o jogo compara um único atributo entre duas cartas.
 
-Bem-vindo ao desafio "Super Trunfo - Países"! Neste projeto, você desenvolverá um sistema para comparar cartas baseadas em atributos de cidades. O desafio é dividido em três níveis: Novato, Aventureiro e Mestre. Cada nível adiciona novas funcionalidades e complexidades, permitindo um aprendizado progressivo.
+Funcionalidades:
 
-## 🏅 Nível Novato
+O jogador escolhe um atributo (População, Área, PIB, etc);
 
-No nível Novato, você começará implementando a lógica básica de comparação entre cartas utilizando estruturas de decisão `if` e `if-else`.
+O programa compara esse atributo entre duas cartas e declara o vencedor.
 
-### 🚩 Objetivos:
-- **Cadastro de Cartas:** O sistema permitirá ao usuário cadastrar cartas de cidades, incluindo informações como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos.
-- **Comparação de Cartas:** O sistema comparará os atributos de duas cartas e determinará a vencedora com base em uma propriedade específica (população, área, PIB, etc.), escolhida no código.
-- **Exibição de Resultados:** Após a comparação, o sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.
+🟡 2️⃣ Nível Aventureiro
+Aqui o desafio aumenta: o jogador compara dois atributos diferentes entre as cartas.
 
-### 📥 Entrada de Dados:
-- Os dados das cartas serão inseridos manualmente via terminal.
-- O sistema solicitará interativamente as informações de cada carta.
+Funcionalidades:
 
-### 📤 Saída de Dados:
-- Após o cadastro, as propriedades da cidade serão exibidas de forma organizada.
-- O resultado da comparação será mostrado, indicando a carta vencedora.
+O jogador escolhe dois atributos distintos;
 
----
+O programa compara os dois separadamente e determina o vencedor com base na soma dos resultados;
 
-## 🏅 Nível Aventureiro
+Detalhamento claro de quem venceu em cada atributo.
 
-No nível Aventureiro, você expandirá o sistema para incluir a comparação aninhada e a criação de um menu interativo usando `switch`.
+🔴 3️⃣ Nível Mestre
+Neste nível, o jogo realiza a soma direta dos valores dos dois atributos escolhidos para definir o vencedor.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Menu Interativo:** O usuário poderá escolher diferentes atributos para comparação através de um menu.
-- **Comparação Aninhada:** Implementação de lógica de comparação mais complexa, utilizando estruturas aninhadas para tomar decisões baseadas em múltiplos atributos.
+Funcionalidades:
 
-### 🚩 Novas Funcionalidades:
-- **Cadastro de Cartas:** Similar ao nível Novato, com a adição de comparação de múltiplos atributos.
-- **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
-- **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
+O jogador escolhe dois atributos;
 
----
+O programa soma os valores de cada carta e compara;
 
-## 🏅 Nível Mestre
+Resultado apresentado com clareza, com tratamento de empate.
 
-No nível Mestre, o desafio se intensifica com a adição de funcionalidades avançadas, como menus dinâmicos e lógica de decisão complexa com operadores ternários.
+🛠️ Como Executar
+💻 Requisitos
+Ter o compilador GCC instalado;
 
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Escolha de Dois Atributos:** O usuário poderá escolher dois atributos para comparação entre as cartas.
-- **Lógica de Decisão Complexa:** Implementação de estruturas de decisão aninhadas e encadeadas, além do uso de operadores ternários para determinar a carta vencedora.
-- **Menus Dinâmicos:** Os menus serão dinâmicos, permitindo uma navegação fluida entre as opções de comparação.
+Estar com o arquivo super_trunfo.c no diretório.
 
-### 🚩 Novas Funcionalidades:
-- **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
-- **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
-- **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
+🏗️ Compilação
+Para compilar o programa, execute no terminal:
 
----
+gcc -o super_trunfo super_trunfo.c
 
-## 📋 Requisitos Funcionais Comuns
-- **Cadastro de Cartas:** O sistema deve permitir o cadastro de cartas com as informações necessárias.
-- **Comparação:** O sistema deve comparar as cartas e determinar a vencedora com base nas regras estabelecidas.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara, indicando a carta vencedora.
+▶️ Execução
+Para executar o programa:
 
-## 📌 Requisitos Não Funcionais Comuns
-- **Usabilidade:** A interface do usuário deve ser simples e intuitiva.
-- **Performance:** O sistema deve executar operações sem atrasos perceptíveis.
-- **Manutenibilidade:** O código deve ser bem estruturado e documentado.
-- **Confiabilidade:** O sistema deve ser robusto e capaz de lidar com entradas inválidas de forma adequada.
+./super_trunfo
 
----
+🎮 Como Jogar
+Escolha os atributos a serem comparados entre as cartas;
 
-Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
+Veja os valores de cada carta nos atributos escolhidos;
 
-Equipe de Ensino - MateCheck
+Acompanhe o resultado detalhado, com explicações da pontuação.
+
+🧑‍🏫 Contribuição e Orientação
+Este projeto foi desenvolvido com muito carinho e dedicação como parte da minha evolução no curso.
+Gostaria muito de contar com o feedback do professor, tanto em relação à lógica quanto ao código, para que eu possa melhorar:
+
+💡 Sugestões de boas práticas são muito bem-vindas;
+
+🛠️ Caso exista uma forma mais eficiente de implementar qualquer parte, adoraria aprender;
+
+✅ Correções e orientações serão aplicadas com atenção.
+
+Muito obrigado por acompanhar meu progresso! 🙏
