@@ -1,73 +1,145 @@
-🚀 Desafio Lógica Super Trunfo 🎴
+# 🃏 Desafio Lógica - Super Trunfo em C
 
-Bem-vindo ao repositório do Desafio Lógica Super Trunfo! Este projeto foi desenvolvido como parte dos estudos de lógica de programação utilizando a linguagem C, com três níveis de complexidade. A ideia é evoluir gradualmente, aplicando conceitos aprendidos na prática. 😄
+Este repositório contém a evolução da implementação do jogo **Super Trunfo** em linguagem **C**, dividida em três níveis: **Novato**, **Aventureiro** e **Mestre**. Cada nível adiciona novos desafios e funcionalidades ao jogo, explorando lógica condicional, estrutura de dados e operações com números.
 
-📚 Níveis de Implementação
+---
 
-🟢 1️⃣ Nível Novato
-Neste nível, o jogo compara um único atributo entre duas cartas.
+## 🧹 Nível Novato
 
-Funcionalidades:
+### ✅ Objetivo
+Comparar **apenas um atributo** entre duas cartas e determinar a vencedora.
 
-O jogador escolhe um atributo (População, Área, PIB, etc);
+### ⚙️ Lógica
+- O jogador escolhe um dos 5 atributos disponíveis.
+- O programa compara esse atributo nas duas cartas.
+- Exibe qual carta venceu com base no valor do atributo.
 
-O programa compara esse atributo entre duas cartas e declara o vencedor.
+### 📅 Exemplo de Entrada
+```
+Escolha o atributo para comparar:
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos Turísticos
+5 - Densidade Populacional
+Digite o número do atributo: 1
+```
 
-🟡 2️⃣ Nível Aventureiro
-Aqui o desafio aumenta: o jogador compara dois atributos diferentes entre as cartas.
+### 📆 Exemplo de Saída
+```
+Atributo escolhido: População
+Carta 1 - São Paulo: 12300000
+Carta 2 - Rio de Janeiro: 6710000
+Resultado: Carta 1 venceu!
+```
 
-Funcionalidades:
+---
 
-O jogador escolhe dois atributos distintos;
+## 🧷 Nível Aventureiro
 
-O programa compara os dois separadamente e determina o vencedor com base na soma dos resultados;
+### ✅ Objetivo
+Permitir a escolha de **dois atributos diferentes** para serem comparados entre duas cartas.
 
-Detalhamento claro de quem venceu em cada atributo.
+### ⚙️ Lógica
+- O jogador escolhe dois atributos diferentes.
+- O programa compara cada um separadamente.
+- Soma os resultados de cada atributo e exibe quem venceu.
 
-🔴 3️⃣ Nível Mestre
-Neste nível, o jogo realiza a soma direta dos valores dos dois atributos escolhidos para definir o vencedor.
+### 📅 Exemplo de Entrada
+```
+Escolha o primeiro atributo para comparar:
+1 - População
+2 - Área
+3 - PIB
+4 - Pontos Turísticos
+5 - Densidade Populacional
+Digite o número do primeiro atributo: 1
 
-Funcionalidades:
+Escolha o segundo atributo para comparar:
+Digite o número do segundo atributo: 2
+```
 
-O jogador escolhe dois atributos;
+### 📆 Exemplo de Saída
+```
+Atributo 1: População
+Carta 1: 12300000 | Carta 2: 6710000 → Carta 1 venceu!
+Atributo 2: Área
+Carta 1: 1521.11 km² | Carta 2: 1182.30 km² → Carta 1 venceu!
 
-O programa soma os valores de cada carta e compara;
+Soma dos Resultados:
+Carta 1: 2 pontos
+Carta 2: 0 pontos
+Resultado: Carta 1 é a vencedora!
+```
 
-Resultado apresentado com clareza, com tratamento de empate.
+---
 
-🛠️ Como Executar
+## 🧙 Nível Mestre
 
-💻 Requisitos
-Ter o compilador GCC instalado;
+### ✅ Objetivo
+Implementar uma fórmula de **Super Poder**, somando dois atributos com regras matemáticas específicas, comparando o poder final de cada carta.
 
-Estar com o arquivo super_trunfo.c no diretório.
+### ⚙️ Lógica
+- O jogador escolhe dois atributos.
+- Cada atributo tem uma fórmula específica para cálculo:
+  - Ex: População: valor / 1000000
+  - Área: valor / 10
+  - PIB: valor * 2
+  - Pontos Turísticos: valor * 1000
+  - Densidade Populacional: valor * 100
+- O programa calcula o super poder para cada carta.
+- Compara os poderes e exibe o resultado.
 
-🏗️ Compilação
-Para compilar o programa, execute no terminal:
+### 📅 Exemplo de Entrada
+```
+Escolha dois atributos para o Super Poder:
+Digite o primeiro atributo (1 a 5): 1
+Digite o segundo atributo (1 a 5): 3
+```
 
-gcc -o super_trunfo super_trunfo.c
+### 📆 Exemplo de Saída
+```
+Atributos escolhidos: População e PIB
 
-▶️ Execução
-Para executar o programa:
+Cálculo do Super Poder:
+Carta 1 - São Paulo:
+População: 12300000 / 1000000 = 12.3
+PIB: 230000 * 2 = 460000
+Super Poder: 12.3 + 460000 = 460012.3
 
-./super_trunfo
+Carta 2 - Rio de Janeiro:
+População: 6710000 / 1000000 = 6.71
+PIB: 160000 * 2 = 320000
+Super Poder: 6.71 + 320000 = 320006.71
 
-🎮 Como Jogar
-Escolha os atributos a serem comparados entre as cartas;
+Resultado: Carta 1 venceu com maior Super Poder!
+```
 
-Veja os valores de cada carta nos atributos escolhidos;
+---
 
-Acompanhe o resultado detalhado, com explicações da pontuação.
+## 🛠️ Compilação e Execução
 
-🧑‍🏫 Contribuição e Orientação
+Para compilar e executar qualquer um dos arquivos `.c`, utilize os comandos abaixo no terminal:
 
-Este projeto foi desenvolvido com muito carinho e dedicação como parte da minha evolução no curso.
-Gostaria muito de contar com o feedback do professor, tanto em relação à lógica quanto ao código, para que eu possa melhorar:
+```
+gcc nivel-novato.c -o novato
+./novato
 
-💡 Sugestões de boas práticas são muito bem-vindas;
+gcc nivel-aventureiro.c -o aventureiro
+./aventureiro
 
-🛠️ Caso exista uma forma mais eficiente de implementar qualquer parte, adoraria aprender;
+gcc nivel-mestre.c -o mestre
+./mestre
+```
 
-✅ Correções e orientações serão aplicadas com atenção.
+---
 
-Muito obrigado por acompanhar meu progresso! 🙏
+## 🤝 Contribuição
+Este repositório foi criado como parte do curso de lógica de programação. Professor, sua orientação é muito bem-vinda! Sinta-se à vontade para sugerir melhorias, correções ou novas ideias que possam enriquecer ainda mais este aprendizado.
+
+Agradeço desde já por todo o conhecimento compartilhado até aqui! 🙏
+
+---
+
+Feito com 💙 por Caio Rabelo
+
