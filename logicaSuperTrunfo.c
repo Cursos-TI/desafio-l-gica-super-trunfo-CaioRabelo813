@@ -16,7 +16,7 @@ typedef struct {
 // Função para calcular os dados derivados da carta
 void calcularDados(Carta *carta) {
     carta->densidade_populacional = carta->populacao / carta->area;
-    carta->pib_per_capita = carta->pib / carta->populacao;
+    carta->pib_per_capita = carta->pib * 1000000000.0 / carta->populacao;  // Corrigir PIB per capita
 }
 
 // Função para exibir os dados principais da carta
